@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 
 public abstract class Shape {
+    double width;
+    double height;
 
     abstract double getArea();
 
