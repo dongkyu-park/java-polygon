@@ -10,7 +10,7 @@ public class InputManager {
     private static final Scanner sc = new Scanner(System.in);
 
     public ArrayList<Point> convertInputToPointList() {
-        printGuideInput();
+        printGuideInput(); // 출력
 
         try {
             return extractPointInString(divideString(sc.next()));
@@ -40,7 +40,7 @@ public class InputManager {
         for (int i = 0; i < coordinateArr.length; i++) {
             Point point = convertCoordinateToPoint(coordinateArr[i]);
             pointList.add(point);
-            printInputSuccess(coordinateArr[i]);
+            printInputSuccess(coordinateArr[i]); // 출력
         }
         return pointList;
     }
