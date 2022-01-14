@@ -12,10 +12,10 @@ public class Main {
         ArrayList<Point> pointList = new ArrayList<>();
 
         pointList = inputManager.convertInputToPointList(); // input값 변환 + 출력
-        getDistanceOrArea(pointList, outputManager); // 정답 출력
+        printDistanceOrArea(pointList, outputManager); // 정답 출력
     }
 
-    public static void getDistanceOrArea(ArrayList<Point> pointList, OutputManager outputManager) {
+    public static void printDistanceOrArea(ArrayList<Point> pointList, OutputManager outputManager) {
         if (pointList.size() == IS_LINE_SEGMENT) {
             LineSegment lineSegment = new LineSegment(pointList);
             outputManager.printDistance(lineSegment.getDistance()); // 출력
